@@ -47,7 +47,7 @@
       
         <a href='{% url "ProductbyCategory" id=item.id %}' class="cat-img position-relative overflow-hidden mb-3">
 
-          <img class="img-fluid" src="{{item.imageUrl}}" alt="" />
+          <img class="img-fluid" src="{% static 'img/'%}{{item.imageUrl}}" alt="" />
         </a>
         <h5 class="font-weight-semi-bold m-0">{{item.name}}</h5>
       </div>
