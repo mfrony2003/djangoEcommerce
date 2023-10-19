@@ -22,17 +22,17 @@
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      
+      type="text/css" rel="stylesheet"
     />
 
     <!-- Libraries Stylesheet -->
-    <link  href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" type="text/css"
+    <link  href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" type="text/css" rel="stylesheet" 
     />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{% static 'css/style.css' %}"   />
+    <link href="{% static 'css/style.css' %}" type="text/css"  rel="stylesheet" />
   </head>
-  <link  href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link  href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" type="text/css" rel="stylesheet" />
   <body>
     <!-- Topbar Start -->
     <div class="container-fluid">
@@ -82,7 +82,7 @@
           {% csrf_token %} 
             <div class="input-group">
               <input  id="searchproducts" required type="search" name="productsearch" class="form-control"   placeholder="Search for products"  />
-              <input  id="searcproductId"  name="productsearchid" class="d-none"  data-url="{% url 'ProductbyCategory/id=' id %}"/>
+              <input  id="searcproductId"  name="productsearchid" class="d-none" />
               
               <div class="input-group-append">
                 <button type="submit" class="input-group-text ">
