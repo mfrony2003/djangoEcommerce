@@ -1,0 +1,25 @@
+{
+  "name": "ecommerceproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "golive":"lt --port 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfrony2003/djangoEcommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfrony2003/djangoEcommerce/issues"
+  },
+  "homepage": "https://github.com/mfrony2003/djangoEcommerce#readme"
+}
