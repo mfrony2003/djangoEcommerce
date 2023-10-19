@@ -10,19 +10,19 @@
     <meta content="Free HTML Templates" name="description" />
 
     <!-- Favicon -->
-    <link href="static/static/img/favicon.ico" rel="icon" />
+    <link href="static/img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+      
     />
 
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
+      
     />
 
     <!-- Libraries Stylesheet -->
@@ -30,9 +30,9 @@
     />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{% static 'css/style.css' %}"  rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}"   />
   </head>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link  href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <body>
     <!-- Topbar Start -->
     <div class="container-fluid">
@@ -82,7 +82,8 @@
           {% csrf_token %} 
             <div class="input-group">
               <input  id="searchproducts" required type="search" name="productsearch" class="form-control"   placeholder="Search for products"  />
-              <input  id="searcproductId"  name="productsearchid" class="d-none"  />
+              <input  id="searcproductId"  name="productsearchid" class="d-none"  data-url="{% url 'ProductbyCategory/id=' id %}"/>
+              
               <div class="input-group-append">
                 <button type="submit" class="input-group-text ">
                   <i class="fa fa-search"></i>
